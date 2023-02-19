@@ -105,7 +105,7 @@ ul {
     background: orange;
 }
 
-.rating-btns li:active {
+.rating-btns li.active-btn {
     color: white;
     background: hsl(217, 12%, 63%);
 }
