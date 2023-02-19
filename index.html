@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <!-- Rating state start -->
@@ -21,11 +24,13 @@
         <img src="./images/icon-star.svg" alt="star" class="star-image">
       </div>
       <div class="contents">
-        <h1>How did we do?</h1>
-        <p>
-          Please let us know how we did with your support request. All feedback is appreciated 
-          to help us improve our offering!
-        </p>
+        <div class="question-section">
+          <h1>How did we do?</h1>
+          <p class="feedback-request">
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+          </p>
+        </div>
         <ul class="rating-btns">
           <li><input type="button" value="1"></li>
           <li><input type="button" value="2"></li>
@@ -38,13 +43,23 @@
     </div>
 
     <!-- Thank you state start -->
-    <!-- You selected  out of 5 -->
-
-    <!-- Thank you!
-  
-    We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch! -->
+    <div class="thank-you-container">
+      <div class="image-section">
+        <img src="./images/illustration-thank-you.svg" alt="thank you" class="thank-you-image">
+        <div class="ratings-score">
+          You selected <span class="score"></span> out of 5
+        </div>
+      </div>
+      <div class="thank-you-section">
+        <h2 class="thank-you-heading">Thank you!</h2>
+        <p class="thank-you-message">
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
   </main>
 
 </body>
+
 </html>
